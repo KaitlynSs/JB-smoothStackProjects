@@ -1,0 +1,10 @@
+     A Java program is a sequence of Java instructions that are executed in a certain order. 
+Since the Java instructions are executed in a certain order, a Java program has a start and 
+an end.
+
+     To execute your Java program you need to signal to the Java Virtual Machine where to 
+start executing the program. In Java, all instructions (code) have to be located inside a Java 
+class. A class is a way of grouping data and instructions that belong together. Thus, a class 
+may contain both variables and methods. A variable can contain data, and a method groups 
+together a set of operations on data (instructions). Don't worry if you do not fully understand 
+this yet. It will be explained in more details in later texts.
