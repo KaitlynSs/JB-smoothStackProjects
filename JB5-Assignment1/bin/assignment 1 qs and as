@@ -1,0 +1,44 @@
+Date-Time API (Qs and As)
+
+1.	 Which class would you use to store your birthday in years, months, days, seconds, and nanoseconds?
+     A) LocalDateTime class
+
+2.	 Given a random date, how would you find the date of the previous Thursday?
+     A) Use the previous method with the temporalAdjuster class
+
+3.	 What is the difference between a ZoneId and a ZoneOffset?
+     A) ZoneOffset only tracks the absolute offset while ZoneId must rely on the ZoneRules to determine what its offset is supposed to be
+
+4.	 How would you convert an Instant to a ZonedDateTime? How would you convert a ZonedDateTime to an Instant?
+     A)By using the ofInstance method form ZonedDateTime
+    
+5.	 Write an example that, for a given year, reports the length of each month within that year.
+     A) void MonthLengthPerYear(Year y) {
+        	System.out.println("Days per month of the year..." + y.getValue());
+            for (int i = 0; i < 12; i++) {
+            	YearMonth m = y.atMonth(i);
+            	System.out.println("  - " + m.toString() + " --> " + m.lengthOfMonth() + " days");
+            }
+        }
+     
+
+6.	 Write an example that, for a given month of the current year, lists all of the Mondays in that month.
+     A) void mondays(yearMonth ym) {
+     int mondays = 0;
+        System.out.println("mondays = " );
+            for (int i = 0; i < m.lengthOfMonth(); i++) {
+            	LocalDate d = ym.atDay(i);
+            	if (d.getDayOfWeek() == MONDAY) 
+            		mondays ++;
+            	System.out.println(mondays + " Mondays");
+            }
+        }
+
+7.	 Write an example that tests whether a given date occurs on Friday the 13th.
+     A) boolean isF13(LocalDate d) {
+        	if (d.getDayOfWeek() == FRIDAY && d.getDaYofMonth() == 13)
+            	return true;
+    		else
+     			return false
+     	}
+        }
